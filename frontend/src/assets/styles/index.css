@@ -1,0 +1,324 @@
+/* index.css */
+
+/* Light theme variables */
+:root {
+  --main-bg-color: #eeeef4;
+  --main-text-color: #0f0f0f;
+  --header-bg-color: #eeeef4;
+  --header-text-color: #050505;
+  --main-price-color: #c50c0c;
+  --card-background-color: rgba(255, 255, 255, 0.525);
+  --card-border-color: #525050;
+  --card-maintext-color: #000000;
+  --table-bg-even-color: #fcfdfd;
+  --table-bg-odd-color: #e4e9ed;
+  --table-row-color: #161515;
+  --table-headerbg-color: #f3f3f7;
+  --table-headertext-color: #080808;
+  --table-header-border: rgba(36, 35, 35, 0.525);
+  --footer-text-color: #000000;
+  --search-bg-color: #ffffff;
+}
+.blue-theme {
+  --main-bg-color: #eeeef4;
+  --main-text-color: #0f0f0f;
+  --header-bg-color: rgb(134, 195, 242);
+  --header-text-color: #050505;
+  --main-price-color: #c50c0c;
+  --card-background-color: #d4dfe386;
+  --card-border-color: #79cce3;
+  --card-maintext-color: #000000;
+  --table-bg-even-color: #b5d7f0;
+  --table-bg-odd-color: #d4e5f1;
+  --table-row-color: #d6d1d1;
+  --table-headerbg-color: #2929c5;
+  --table-headertext-color: #e7dede;
+  --table-header-border: rgb(117, 156, 234);
+  --footer-text-color: #050505;
+  --search-bg-color: rgb(134, 195, 242);
+}
+
+.green-theme {
+  --main-bg-color: #e2e2eb;
+  --main-text-color: #0f0f0f;
+  --header-bg-color: rgb(8, 77, 4);
+  --header-text-color: #f5efef;
+  --main-price-color: #c50c0c;
+  --card-background-color: #ffffff;
+  --card-border-color: #7ce379;
+  --card-maintext-color: #000000;
+  --table-bg-even-color: #b5f0ce;
+  --table-bg-odd-color: #4c7b61;
+  --table-row-color: #0e0d0d;
+  --table-headerbg-color: rgb(0, 19, 0);
+  --table-headertext-color: #e7dede;
+  --table-header-border: #69ed86;
+  --footer-text-color: #0f0f0f;
+  --search-bg-color: rgb(8, 77, 4);
+}
+/* Light theme variables */
+.dark-theme {
+  --main-bg-color: #343541;
+  --main-text-color: #ddd0d0;
+  --header-bg-color: #343541;
+  --header-text-color: #ffffff;
+  --main-price-color: #cfcadd;
+  --card-background-color: #6c6767;
+  --card-border-color: #282524;
+  --card-maintext-color: #f0ebeb;
+  --table-bg-even-color: #2a2a2c;
+  --table-bg-odd-color: #454550;
+  --table-row-color: #e1d7d7;
+  --table-headerbg-color: #343541;
+  --table-headertext-color: #ffffff;
+  --table-header-border: #e7dede;
+  --search-bg-color: #343541;
+}
+
+table tr:nth-child(even) {
+  background-color: var(--table-bg-even-color);
+  color: var(--table-row-color) !important;
+}
+table tr:nth-child(odd) {
+  background-color: var(--table-bg-odd-color);
+  color: var(--table-row-color) !important;
+}
+table th {
+  background-color: var(--table-headerbg-color) !important;
+  color: var(--table-headertext-color) !important;
+  border: 1px solid var(--table-header-border); /* Add border style, color, and width */
+}
+/* Apply variables to components based on class */
+
+main {
+  min-height: 80vh;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  flex-grow: 1;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color) !important;
+}
+
+.footer-text {
+  background-color: var(--header-bg-color);
+  color: var(--footer-text-color) !important;
+  font-size: 0.5em;
+  font-style: italic;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.rating svg {
+  color: #f8e825;
+}
+
+.rating-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+
+.product-title {
+  height: 2.5em; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  white-space: nowrap; /* Prevent wrapping */
+  color: var(--card-maintext-color) !important;
+}
+
+table td,
+table th {
+  text-align: center;
+}
+
+.review {
+  margin-top: 30px;
+}
+
+.review h2 {
+  font-size: 24px;
+  background: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+  color: #4c7b61;
+}
+
+.review button {
+  margin-top: 10px;
+}
+
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.wincobold {
+  font-family: 'winco', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.screenmainheader {
+  --bs-text-rgb: #c13c90; /* Replace with your custom color values */
+  color: var(--bs-text-rgb) !important;
+}
+/* custom.css */
+.text-default {
+  text-align: center; /* Default text alignment */
+}
+.text-default .list-group-item:last-child {
+  text-justify: auto;
+  text-align: left;
+  padding: 0.25em;
+  background-color: var(--card-background-color) !important;
+  color: var(--main-text-color) !important;
+}
+
+.arrow-button {
+  font-size: 3em;
+  color: var(--main-text-color) !important;
+  background-color: transparent;
+}
+.img-50x50 {
+  max-width: 100%; /* Allow the image to resize based on content */
+  max-height: 30px; /* Set your desired max height */
+  margin-right: 15px;
+}
+
+.custom-dropdown {
+  font-size: 0.8em;
+  color: #c13c90;
+}
+
+.custom-dropdown-item {
+  font-size: small !important; /* Change the font size */
+  color: #080808 !important; /* Change the text color */
+}
+
+.headerRightMargin {
+  margin-right: 5px;
+  color: var(--header-text-color) !important;
+}
+
+.dropdown-menu {
+  min-width: fit-content !important;
+  font-size: small !important; /* Change the font size */
+  color: #c13c90;
+}
+
+#username {
+  width: fit-content;
+  color: var(--header-text-color) !important;
+}
+
+.dropdown-menu.show {
+  margin-left: 40px;
+  color: var(--header-text-color) !important;
+}
+
+.dropdown-menu.show .custom-dropdown-item:hover {
+  background-color: #366767;
+  color: #f9f3f7 !important;
+}
+
+#adminLink,
+#navbarBrand {
+  color: var(--header-text-color) !important;
+}
+
+.navbarBrand {
+  color: var(--header-text-color) !important;
+}
+
+.priceColor {
+  color: var(--main-price-color) !important;
+}
+
+.cardBackground,
+#card {
+  background-color: var(--card-background-color) !important;
+  border: 1px double var(--card-border-color) !important;
+}
+
+.full-height {
+  min-height: 170vh;
+}
+
+.searchButton {
+  border: 1px double var(--main-text-color) !important;
+  color: var(--header-text-color) !important;
+  background-color: var(--search-bg-color) !important;
+  font-size: smaller;
+}
+.searchIcon {
+  color: var(--header-text-color) !important;
+  text-align: 'center';
+  justify-content: 'center';
+  /* 125% of the size of the shipping cart icon */
+  vertical-align: middle;
+  background-color: var(--header-bg-color) !important;
+  border: 1px solid var(--main-text-color) !important;
+}
+@media (max-width: 768px) {
+  .w-100 {
+    width: 50%; /* Adjust the width for smaller screens */
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+@media (max-width: 992px) {
+  .d-md-none {
+    display: block !important;
+  }
+}
+
+/* Carousel.css */
+/* Add or modify the existing CSS file for your Carousel component */
+
+.custom-carousel {
+  /* Style the entire carousel container if needed */
+  background-color: #64a9ef98; /* Example background color */
+  /* Add other styles as needed */
+  color: #0d0d0e;
+}
+
+.img-carousel {
+  width: 90%; /* Ensure the image fills the container width */
+  max-width: '500px';
+  left: 40;
+  max-height: 500px; /* Adjust the height as needed for your design */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+  font: 1em sans-serif;
+}
+
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 10px; /* Adjust padding if necessary */
+  color: white; /* Set the text color */
+  background: none; /* Remove background color */
+  text-align: center; /* Align text as needed */
+  font-size: 16px; /* Set the font size */
+}
+
+/* Changing the carousel control arrow color */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Changing the arrow color to black */
+}
+.placeholder-content {
+  width: 80%;
+}
